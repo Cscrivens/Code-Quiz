@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timed Quiz</title>
+  <link rel="stylesheet" href="./css/style.css" />
+    </head>
+<body>
+  <div id="quiz-container">
+    <h1>Code Quiz</h1>
+    <div id="timer-container" class="d">
+      <p>Time Left: <span id="timer">30</span> seconds</p>
+    </div>
+    <button id="start-btn">Start Quiz</button>
+    <div id="question-container" class="hide">
+      <p id="question"></p>
+      <button class="answer-btn">Option 1</button>
+      <button class="answer-btn">Option 2</button>
+      <button class="answer-btn">Option 3</button>
+      <button class="answer-btn">Option 4</button>
+    </div>
+    <div id="result-container" class="hide">
+      <p id="result"></p>
+      <button id="next-btn">Next Question</button>
+    </div>
+    <div id="game-over-container" class="hide">
+      <p id="final-score"></p>
+      <label for="initials">Enter Initials:</label>
+      <input type="text" id="initials" maxlength="3">
+      <button id="save-btn">Save Score</button>
+    </div>
+    <div id="high-scores-container" class="hide">
+      <h2>High Scores</h2>
+      <ul id="high-scores-list"></ul>
+    </div>
+  </div>
+
+  <script src="./js/script.js">
+     </script>
+</body>
+</html>
